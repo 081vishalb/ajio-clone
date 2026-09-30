@@ -1,0 +1,91 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #222;
+}
+.navbar a { color: white; text-decoration: none; margin-left: 20px; }
+.navbar .logo { font-size: 22px; font-weight: bold; margin-left: 0; }
+
+.container { padding: 20px 30px; }
+
+.filters { margin-bottom: 20px; }
+.filters button {
+  padding: 8px 18px;
+  margin-right: 10px;
+  border: 1px solid #222;
+  background: white;
+  cursor: pointer;
+}
+.filters button.active { background: #222; color: white; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+.card {
+  border: 1px solid #eee;
+  text-decoration: none;
+  color: #222;
+}
+.card img { width: 100%; height: 300px; object-fit: cover; }
+.card-info { padding: 10px; }
+.card-info h4 { margin: 0 0 5px; }
+.card-info p { margin: 0 0 8px; color: #666; }
+
+.detail {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.detail img { width: 350px; max-width: 100%; height: 450px; object-fit: cover; }
+.detail-info { max-width: 450px; }
+.detail-info h2 { margin: 0 0 5px; }
+.detail-info h3 { margin: 0 0 15px; color: #666; font-weight: normal; }
+.price { font-size: 24px; font-weight: bold; }
+
+.sizes { margin: 20px 0; }
+.sizes button {
+  width: 45px; height: 45px;
+  margin-right: 10px;
+  border: 1px solid #222;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+}
+.sizes button.active { background: #222; color: white; }
+
+.add-btn {
+  padding: 14px 40px;
+  background: #c5a15a;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+}
+.cart-item img { width: 90px; height: 120px; object-fit: cover; }
+.cart-item-info { flex: 1; }
+.cart-item-info h4 { margin: 0 0 5px; }
+.cart-item-info p { margin: 0 0 5px; color: #666; }
+
+.remove-btn {
+  padding: 8px 16px;
+  border: 1px solid #c00;
+  background: white;
+  color: #c00;
+  cursor: pointer;
+}
+
+.cart-total { text-align: right; margin-top: 25px; }
+
+.continue { color: #222; }
